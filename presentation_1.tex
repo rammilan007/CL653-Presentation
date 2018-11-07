@@ -275,7 +275,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Results: True Vs Estimated(All Filter)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{true_vs_estimated_all.png}
+\includegraphics[width=0.8\linewidth]{true_vs_estimated_all.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
@@ -283,7 +283,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \frametitle{Results:True Vs Estimated(EKF and UKF)}
 
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{true_vs_estimated_noKF.png}
+\includegraphics[width=0.8\linewidth]{true_vs_estimated_noKF.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------INNOVATION---------------------
@@ -291,7 +291,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \frametitle{Results: Innovation(All Filter)}
 
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{innovation_all.png}
+\includegraphics[width=0.8\linewidth]{innovation_all.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
@@ -299,21 +299,21 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \frametitle{Results: Innovation(EKF and UKF)}
 
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{innovation_noKF.png}
+\includegraphics[width=0.8\linewidth]{innovation_noKF.png}
 \end{figure}
 \end{frame}
 %-----------------------------------------------SPECTRAL RADII----------------
 \begin{frame}
 \frametitle{Results: Spectral Radii(All on same plot)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{spectral_radii_all.png}
+\includegraphics[width=0.8\linewidth]{spectral_radii_all.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Spectral Radii(subplots)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{spectral_radii_all_subplots.png}
+\includegraphics[width=0.8\linewidth]{spectral_radii_all_subplots.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------ESTEIMATION ERROR---------------------
@@ -321,7 +321,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \frametitle{Results: Estimation error(All Filter)}
 
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_all.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_all.png}
 \end{figure}
 \end{frame}
 %----------------------------------------Estimation Error EKF with std bounds-------
@@ -344,125 +344,80 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Results: Estimation error for EKF and UKF(State 1)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_noKF_sigma_s1.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_noKF_sigma_s1.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Estimation error for EKF and UKF(State 2)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_noKF_sigma_s2.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_noKF_sigma_s2.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Estimation error for EKF and UKF(State 3)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_noKF_sigma_s3.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_noKF_sigma_s3.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Estimation error for EKF and UKF(State 4)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_noKF_sigma_s4.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_noKF_sigma_s4.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Estimation error for EKF and UKF(State 5)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{estimation_error_noKF_sigma_s5.png}
+\includegraphics[width=0.8\linewidth]{estimation_error_noKF_sigma_s5.png}
 \end{figure}
 \end{frame}
-%-------------------------------------TABLE OF MEAN AND VARIANCES OF INNOVATION-----
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{M and Cov} & \textbf{KF} & \textbf{EKF}& \textbf{UKF}
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-%-------------------------------------TABLE OF RMSE-----
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{M and Cov} & \textbf{KF} & \textbf{EKF}& \textbf{UKF}
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
+%% ------------TABLES------------------------
+% will have to make image of tables
+\begin{frame}{Tables}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{tables.PNG}
+        \caption{Mean,Variance and RMSE for filters}
+        \label{fig:my_label}
+    \end{figure}
 \end{frame}
 %---------------------NESS-----Beta_K plots----------------------
 \begin{frame}
 \frametitle{Results:Normalised Estimation Error Squared(NESS)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{betak_all.png}
+\includegraphics[width=0.8\linewidth]{betak_all.png}
 \end{figure}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Results: Normalised Estimation Error Squared(NESS)}
 \begin{figure}
-\includegraphics[width=1.0\linewidth]{betak_noKF.png}
+\includegraphics[width=0.8\linewidth]{betak_noKF.png}
 \end{figure}
 \end{frame}
-%------------------------------------------------
-%\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
 %------------------------------------------------
 \section{Conclusion}
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item The fraction of time instants for which $\beta_k$ exceeded the bounds was 0 and $alpha$=0.05. Hence filter can be said consistent.
-        \item KF didn't work well on this system.
-        \item EKF worked well.
-        \item UKF didn't work well for few states.
+        \item The fraction of time instants for which $\beta_k$ exceeded the bounds was 0 and $\alpha$=0.05. Hence filter can be said consistent.
+        \item KF didn't work well on this system at chose linearisation point.
+        \item Both EKF and UKF performed decently well.
+        \item For few states EKF estimated better, for few UKF and for few both did better
     \end{itemize}
 \end{frame}
-
 %------------------------------------------------
 \section{References}
 \begin{frame}
 \frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
+\begin{itemize}
+    \item Lectrue slides
+    \item Kandepu, R., and Foss, B., and Imsland, L.; Applying the Unscented Kalman Filter
+for Nonlinear State Estimation, Journal of Process Control, 18, 2008, 753-768.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
