@@ -237,7 +237,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
     \begin{equation}
         y2=k_7x_2+k_8x_4
     \end{equation}
-    \item x(0)=$[0.2,-0.6,-0.4,0.1,0.3]^T\ ;\ Q=10^{-4}I_{5x5};$\\
+    \item x(0)=$[0.2,-0.6,-0.4,0.1,0.3]^T\ ;\ x(0|0)=0.9*x(0);\ \ Q=10^{-4}I_{5x5};$\\
     $\ R=10^{-2}I_{2x2}\ ; T_s\ =0.1\ sec; \ P(0|0)=I_{5x5};\ N=500$
     \begin{table}[h!]
     \tiny
@@ -377,7 +377,7 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \end{frame}
 %% ------------TABLES------------------------
 % will have to make image of tables
-\begin{frame}{Tables}
+\begin{frame}{Tables: Mean and Variance of innovation; RMSE of states}
     \begin{figure}
         \centering
         \includegraphics[width=0.8\linewidth]{plots/tables.PNG}
@@ -400,12 +400,21 @@ Indian Institute of Technology, Bombay \\ % Your institution for the title page
 \end{figure}
 \end{frame}
 %------------------------------------------------
+\begin{frame}
+\frametitle{Results: Normalised Estimation Error Squared(NESS)}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{plots/betak_EKF.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------
 \section{Conclusion}
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item The fraction of time instants for which $\beta_k$ exceeded the bounds was 0 and $\alpha$=0.05. Hence filter can be said consistent.
+        \item The fraction of time instants for which $\beta_k$ exceeded the bounds is 0.368 for EKF and 1 for both KF and UKF.
+        \item No filter is consistent for the initial estimate used.
+        \item Initial estimate should be carefully chosen random guess or far from true state doesn't seemed to work. 
         \item KF didn't work well on this system at chose linearisation point.
-        \item Both EKF and UKF performed decently well.
+        \item Both EKF and UKF performed decently well but not satisfactory.
         \item For few states EKF estimated better, for few UKF and for few both did better
     \end{itemize}
 \end{frame}
